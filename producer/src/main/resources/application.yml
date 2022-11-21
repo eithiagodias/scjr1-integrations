@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+fiap:
+  api:
+    path: '/agro-drones'
+
+camel:
+  springboot:
+    name: ServiceRest
+
+management:
+  port: 8081
+
+endpoints:
+  enabled: false
+  health:
+    enabled: true
+
+spring:
+  rabbitmq:
+    addresses: "replace url from cloudamqp"
