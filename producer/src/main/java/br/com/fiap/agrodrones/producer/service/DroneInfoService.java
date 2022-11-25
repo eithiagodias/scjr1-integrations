@@ -11,15 +11,31 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 
 public class DroneInfoService {
 
-
-    public static void processDroneInfo(DroneInfoDTO dto) {
+    public static void processDroneInfo(DroneInfoDTO dto) throws Exception {
         // Colocar as validações de latitude e longitude
         // Colocar as validações de temperatura e umidade
 
-//        double latitude = dto.getLatitude();
-//         if (latitude is valid) {
-//            dto.setLatitude(dto.getLatitude());
-//        }
+        double latitude = dto.getLatitude();
+        double longitude = dto.getLongitude();
+
+        int temperatura = dto.getTemperatura();
+        int umidade = dto.getUmidade();
+
+         if (latitude < -90 || latitude > 90) {
+             throw new Exception("Latitude deve ser entre -90 e 90 graus.");
+        }
+
+         if (longitude < -180 || longitude > 180) {
+             throw new Exception("Longitude deve ser entre -180 e 180 graus.");
+         }
+
+         if (temperatura < -25 || temperatura > 40) {
+             throw new Exception("Temperatura deve ser um inteiro entre -25 e 40.");
+         }
+
+         if (umidade < 0 || umidade > 100) {
+             throw new Exception("Umidade deve ser um inteiro entre 0 e 100.");
+         }
 
         // Colocar informações na fila
         //Set up queue, exchanges and bindings
@@ -37,6 +53,7 @@ public class DroneInfoService {
 
         RabbitTemplate template = new RabbitTemplate(Config.getConnection());
 
+        // transforma em JSON
         Gson gson = new Gson();
         String json = gson.toJson(dto);
         System.out.println(json);
