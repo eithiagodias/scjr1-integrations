@@ -66,11 +66,16 @@ public class ProducerApplication {
 						@Override
 						public void process(Exchange exchange) throws Exception {
 							DroneInfoDTO dto = (DroneInfoDTO) exchange.getIn().getBody();
-							DroneInfoService.processDroneInfo(dto);
-							exchange.getIn().setBody(dto);
+							try {
+								DroneInfoService.processDroneInfo(dto);
+								exchange.getIn().setBody(dto);
+								exchange.getIn().setHeader(Exchange.HTTP_RESPONSE_CODE, 200);
+							} catch (Exception e) {
+								exchange.getIn().setBody(e.getMessage());
+								exchange.getIn().setHeader(Exchange.HTTP_RESPONSE_CODE, 400);
+							}
 						}
-					})
-					.setHeader(Exchange.HTTP_RESPONSE_CODE, constant(200));
+					});
 
 
 		}
