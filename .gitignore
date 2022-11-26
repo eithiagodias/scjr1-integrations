@@ -1,0 +1,10 @@
+.idea
+target
+
+microservice/.idea
+producer/.idea
+consumer/.idea
+
+microservice/target
+producer/target
+consumer/target
