@@ -19,4 +19,4 @@ endpoints:
 
 spring:
   rabbitmq:
-    addresses: "amqps://ydplgzhw:ZM2BGRHcsmNXLi3aaeqeCxwQyzP47Yhs@jackal.rmq.cloudamqp.com/ydplgzhw"
+    addresses: "url rabbit"
