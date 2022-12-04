@@ -1,22 +1,6 @@
-server:
-  port: 8080
-
-fiap:
-  api:
-    path: '/agro-drones'
-
-camel:
-  springboot:
-    name: ServiceRest
-
-management:
-  port: 8082
-
-endpoints:
-  enabled: false
-  health:
-    enabled: true
+queue:
+  drones: "drones"
 
 spring:
   rabbitmq:
-    addresses: "copiar url"
+    addresses: "copy url"

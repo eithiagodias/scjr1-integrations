@@ -1,4 +1,4 @@
-package br.com.fiap.agrodrones.microservice.dtos;
+package br.com.fiap.agrodrones.consumer.dtos;
 
 public class DroneInfoDTO {
 

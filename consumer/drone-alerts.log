@@ -1,0 +1,45 @@
+dez 04, 2022 6:22:05 PM br.com.fiap.agrodrones.consumer.consumer.LogManager write
+INFO: 
+Drone Id: 1
+Latitude: 11.4
+Logitude: 10.3
+Temperatura: -10
+Umidade: 66
+Ativar Rastreamento: true
+
+dez 04, 2022 6:24:36 PM br.com.fiap.agrodrones.consumer.consumer.LogManager write
+INFO: 
+Drone Id: 1
+Latitude: 11.4
+Logitude: 10.3
+Temperatura: -17
+Umidade: 61
+Ativar Rastreamento: true
+
+dez 04, 2022 6:24:46 PM br.com.fiap.agrodrones.consumer.consumer.LogManager write
+INFO: 
+Drone Id: 1
+Latitude: 11.4
+Logitude: 10.3
+Temperatura: -20
+Umidade: 23
+Ativar Rastreamento: true
+
+dez 04, 2022 6:24:56 PM br.com.fiap.agrodrones.consumer.consumer.LogManager write
+INFO: 
+Drone Id: 1
+Latitude: 11.4
+Logitude: 10.3
+Temperatura: -11
+Umidade: 40
+Ativar Rastreamento: true
+
+dez 04, 2022 6:25:06 PM br.com.fiap.agrodrones.consumer.consumer.LogManager write
+INFO: 
+Drone Id: 1
+Latitude: 11.4
+Logitude: 10.3
+Temperatura: 2
+Umidade: 3
+Ativar Rastreamento: true
+

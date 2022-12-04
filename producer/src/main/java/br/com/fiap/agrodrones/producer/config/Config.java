@@ -8,10 +8,10 @@ public class Config {
     public static CachingConnectionFactory getConnection(){
 
         if(connectionFactory == null){
-            connectionFactory = new CachingConnectionFactory("xxxx");//TODO add hostname
-            connectionFactory.setUsername("xxx");//TODO add username
-            connectionFactory.setPassword("xxx");//TODO add password
-            connectionFactory.setVirtualHost("xxx");//TODO add virtualhost
+            connectionFactory = new CachingConnectionFactory("");//TODO add hostname
+            connectionFactory.setUsername("");//TODO add username
+            connectionFactory.setPassword("");//TODO add password
+            connectionFactory.setVirtualHost("");//TODO add virtualhost
 
             //Recommended settings
             connectionFactory.setRequestedHeartBeat(30);

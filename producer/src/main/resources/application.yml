@@ -19,4 +19,4 @@ endpoints:
 
 spring:
   rabbitmq:
-    addresses: "url rabbit"
+    addresses: "copy url"
