@@ -17,7 +17,7 @@ public class Api {
         Response response = new Response("Não foi possivel enviar as infos do drone. Por favor, tente novamente.", 0);
 
         try {
-            URL api = new URL("http://localhost:8081/agro-drones/api/drone-info");
+            URL api = new URL("http://localhost:8083/agro-drones/api/drone-info");
             HttpURLConnection connection = (HttpURLConnection) api.openConnection();
             connection.setDoOutput( true );
             connection.setInstanceFollowRedirects( false );

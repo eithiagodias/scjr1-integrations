@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8080
 
 fiap:
   api:
@@ -10,7 +10,7 @@ camel:
     name: ServiceRest
 
 management:
-  port: 8083
+  port: 8082
 
 endpoints:
   enabled: false
