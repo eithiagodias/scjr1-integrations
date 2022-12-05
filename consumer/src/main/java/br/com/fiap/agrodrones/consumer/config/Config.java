@@ -1,4 +1,4 @@
-package br.com.fiap.agrodrones.producer.config;
+package br.com.fiap.agrodrones.consumer.config;
 
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 
